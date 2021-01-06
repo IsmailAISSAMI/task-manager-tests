@@ -12,7 +12,7 @@ const MongoClient = mongodb.MongoClient
 // Connection URL
 const connectionUrl = 'mongodb://127.0.0.1:27017'
 // Database Name
-const database = 'task-manager'
+const databaseName = 'task-manager'
 
 // We use connect method to connect to the server
 
@@ -21,4 +21,10 @@ MongoClient.connect(connectionUrl, { useNewUrlParser: true,  useUnifiedTopology:
         return console.log('Unable to connect to database!!')
     }
     console.log('Connected successfully to server!')
+    const db = client.db(databaseName)
+    // Create a collection
+    db.collection('users').insertOne({
+        firstName: 'ismail',
+        lastName: 'AISSAM'
+    })
 })
