@@ -24,3 +24,5 @@ click on ***open shell***.
  - `npm init -y`.
  - `npm i mongodb`, [(package documentation).](https://www.npmjs.com/package/mongodb)
  - Create a mongodb.js File.
+ - Check the second commit "Connect to MongoDB" on my  repository  github.
+ - run : `node mongodb.js` 
